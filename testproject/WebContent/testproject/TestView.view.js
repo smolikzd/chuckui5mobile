@@ -5,11 +5,10 @@ sap.ui.jsview("testproject.TestView", {
       },
 
       createContent : function(oController) {
-          return new sap.m.Page({
-              title: "Title",
-              content: [
-              ]
-          });
+          var oPage = new sap.m.Page({ title : "titulek"});
+          var oButton = new sap.m.Button("idButton", {text : "Ahoj"});
+          oPage.addContent(oButton);
+	  return oPage;
       }
 
 });
